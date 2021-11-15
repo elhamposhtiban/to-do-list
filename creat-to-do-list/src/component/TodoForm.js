@@ -4,10 +4,10 @@ function TodoForm(props) {
   const [toDOinput, setTodoInput] = useState("");
   const handleSubmit = e => {
     e.preventDefault();
-    // props.onSubmit({
-    //     id: Math.floor(Math.random() * 10000),
-    //     text: toDOinput
-    // })
+    props.onSubmit({
+        id: Math.floor(Math.random() * 10000),
+        text: toDOinput
+    })
     setTodoInput('')
   };
 
