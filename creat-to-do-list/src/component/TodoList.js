@@ -17,9 +17,10 @@ function TodoList() {
     <div>
       <h1> what is the plan for today?</h1>
       <TodoForm onSubmit={addTodos} />
-      <Todo/>
+      <Todo todos={todos} completeTodo = {completeTodo} />
     </div>
   );
 }
 
 export default TodoList;
+ 
