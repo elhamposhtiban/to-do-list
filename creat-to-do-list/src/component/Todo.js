@@ -4,7 +4,7 @@ import {TiEdit} from 'react-icons/ti'
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 
-function Todo() {
+function Todo({todos, completeTodo}) {
   const [edit, setEdit] = useState({
     id: null,
     value: "",
