@@ -29,14 +29,14 @@ function TodoList() {
     setTodos(removeArr);
   };
 
-  const completeTodo = (id) => {
-    let updatedTodos = todos.map((todo) => {
+  const completeTodo = id => {
+    let updatedTodos = todos.map(todo => {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete;
       }
       return todo;
     });
-    // setTodos(updatedTodos);
+    setTodos(updatedTodos);
   };
 
   return (
