@@ -14,6 +14,8 @@ function TodoList() {
     setTodos(newTodos);
   };
 
+  // For updating the text after edit it.
+
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
